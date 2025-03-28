@@ -1,0 +1,1 @@
+git@github.com:StephenBel/posmotri-v-okno-fd.git
