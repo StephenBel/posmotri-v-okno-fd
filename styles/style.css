@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -50,7 +50,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .content {
@@ -60,12 +60,10 @@ ol {
   align-items: end;
   gap: 30px;
   width: 1140px;
-  
 }
 .search-form {
   display: flex;
   justify-content: space-between;
-
 }
 
 .content__details {
@@ -74,7 +72,6 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .content__list-container {
@@ -88,9 +85,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
-
 
 .result {
   padding-top: 78px;
@@ -131,7 +126,7 @@ ol {
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
@@ -145,6 +140,7 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: white;
+  display: block;
 }
 
 .content__video-card-title {
@@ -152,21 +148,18 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 100%;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 196px;
   margin-bottom: 6px;
-
-
-
 }
 .content__video-card-description {
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -180,8 +173,8 @@ ol {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-
 }
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -190,12 +183,11 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .search-form__checkbox-list {
-display: flex;
-column-gap: 15px;
-
+  display: flex;
+  column-gap: 15px;
 }
 
 .search-form__label {
@@ -203,26 +195,28 @@ column-gap: 15px;
   width: fit-content;
   column-gap: 5px;
   align-items: center;
-
 }
+
 .search-form__textfield {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   background-color: transparent;
   border: 0;
-  border-top: 1px solid white ;
-  border-bottom: 1px solid white ;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   color: white;
   height: 27px;
-
   width: 225px;
-  
 }
+
 .search-form__textfield::placeholder {
   color: #fff;
   opacity: 0.7;
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .search-form__label:has(:focus-visible),
@@ -230,9 +224,8 @@ column-gap: 15px;
 .search-form__label:has(:focus-visible) {
   outline: 1px solid rgb(255, 255, 255);
   outline-offset: 1px;
-  /* border-radius: 0; */
-
 }
+
 .search-form__textfield:focus {
   outline: none;
   appearance: none;
@@ -245,25 +238,28 @@ column-gap: 15px;
   display: flex;
   justify-content: center;
   padding: 1px;
-
 }
+
 .search-form__pseudo-checkbox::after {
   display: none;
   background-color: #fff;
   width: 100%;
   height: 100%;
   content: "";
-
-
-
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
 }
-.search-form__label:hover, .button:hover {
+
+.search-form__label:hover,
+.button:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.search-form__label:has(.search-form__textfield):hover {
+  text-decoration: none;
 }
 
 .button {
@@ -276,17 +272,15 @@ column-gap: 15px;
   height: 34px;
   letter-spacing: 0;
   align-self: end;
-
 }
 
 .search-form__submit-button {
   width: 194px;
 }
+
 .more-button {
   width: 390px;
   margin: 30px 3px 2px 2px;
-  
-
 }
 
 .button:active {
@@ -306,10 +300,9 @@ column-gap: 15px;
 .content__list-item:has(:focus-visible) {
   outline: 1px solid white;
   outline-offset: -1px;
-  
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -317,6 +310,7 @@ column-gap: 15px;
   display: block;
   background-color: #545050;
 }
+
 .content__list-item {
   padding: 0 3px;
 }
